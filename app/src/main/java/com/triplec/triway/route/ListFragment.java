@@ -59,7 +59,6 @@ public class ListFragment extends MvpFragment<RouteContract.Presenter> implement
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        // TODO Add your menu entries here
         super.onCreateOptionsMenu(menu, inflater);
         this.menu = menu;
         if (isEditing) {
@@ -132,7 +131,6 @@ public class ListFragment extends MvpFragment<RouteContract.Presenter> implement
 
     @Override
     public void showRoutes(TriPlan placePlan) {
-        //TODO
         markerPoints= new ArrayList<LatLng>();
         List<TriPlace> resultPlaces = placePlan.getPlaceList();
         if (resultPlaces == null || resultPlaces.size() == 0)
